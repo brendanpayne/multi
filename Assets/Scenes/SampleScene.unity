@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3851594174921547658, guid: d551e42ecc18e9c44b3b5e2dec524af8, type: 3}
+      propertyPath: gravity
+      value: -19.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8741492499012325011, guid: d551e42ecc18e9c44b3b5e2dec524af8, type: 3}
       propertyPath: m_Name
       value: Player (1)

@@ -1,13 +1,19 @@
 using UnityEngine;
 
-public class PlayerLook : MonoBehaviour
-{
+public class PlayerLook : MonoBehaviour {
     public Camera cam;
     private float xRotation = 0.0f;
     public float mouseSensitivity = 100.0f;
+    private bool cursorLocked = true;
 
-    public void ProcessLook(Vector2 input)
-    {
+    void Start() {
+        if (cursorLocked) {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
+    public void ProcessLook(Vector2 input) {
         float mouseX = input.x * mouseSensitivity * Time.deltaTime;
         float mouseY = input.y * mouseSensitivity * Time.deltaTime;
 
